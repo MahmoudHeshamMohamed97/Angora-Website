@@ -1,0 +1,291 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 0.5px solid white;
+    padding: 20px 0;
+}
+.collapse a{
+    color: white;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: 0.5s all;
+    margin-left: 10px;
+}
+.collapse a:hover{
+    color: #F15454;
+}
+.SocialMedia a{
+    text-decoration: none;
+}
+/*************************************************************************************/
+.settings{
+    background-color: black;
+    opacity: 1;
+    transition: 0.5s all;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 999;
+}
+.settings a{
+    text-decoration: none;
+    color: white;
+}
+.settings i{
+    padding: 10px;
+}
+.settings:hover{
+    opacity: 0.7;
+}
+/****************************************************************************************/
+#home{
+    position: relative;
+}
+#home .carousel-control-next,#home .carousel-control-prev {
+    bottom: unset;
+    position: unset;
+    padding: 15px;
+    border: 1px white solid;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    transition: 0.5s all;
+}
+#home .carousel-control-next{
+    border-top: 1px solid white;
+}
+#home .ArrowsBox{
+    position: absolute;
+    left: 0;
+    top: 40%;   
+}
+#home .carousel-control-next:hover,#home .carousel-control-prev:hover {
+    background-color: white;
+    color: black;
+}
+#home .ScrollIcon{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 1;
+}
+#home .ScrollIcon i{
+    color: white;
+    transition: 0.5s all;
+}
+#home .ScrollIcon i:hover{
+    color: #F15454;
+}
+#home .carousel-caption{
+    bottom: unset;
+    top: 35%;
+}
+#home .carousel-caption h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+/**************************************************************************************************/
+.Header{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.Header span{
+    color: rgb(179, 139, 139);
+    position: absolute;
+    bottom: 60%;
+    left: 50px;
+    right: 50px;
+    z-index: 1;
+    opacity: 0.4;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+.Header hr{
+    width: 50px;
+    height: 0.4px;
+    background-color: black;
+    transition: 0.5s all;
+}
+.Header:hover hr{
+    width: 80px;
+}
+/******************************************************************************************/
+#team .MyImage{
+    position: relative;
+}
+#team .ImageLayer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F15454;
+    opacity: 0;
+    display: flex;
+    padding: 0 25px;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s all;
+}
+#team .ImageLayer a{
+    text-decoration: none;
+    color: white;
+}
+#team .TeamMember:hover .ImageLayer{
+    opacity: 0.9;
+}
+#team .MemberDataBlock{
+    text-align: center;
+    font-size: 0.9rem;
+}
+#team .MemberDataBlock h3{
+    font-size: 1.2rem;
+    transition: 0.5s all;
+}
+#team .TeamMember:hover h3{
+    color: #F15454;
+}
+/****************************************************************************************/
+#services{
+    background-color: #FAFAFA;
+}
+.ServiceBody{
+    transition: 0.5s all;    
+}
+.ServiceBody:hover h5{
+    color: #F15454;
+}
+.rotated90{
+    transform: rotate(90deg);
+}
+/********************************************************************************************/
+#blog{
+    position: relative;
+    height: 100vh;
+}
+#blog .carousel-indicators{
+    background-color: white;
+    bottom: unset;
+    top: 25px;
+}
+#blog .carousel-indicators li{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-indent: unset;
+}
+/* #blog .carousel-indicators .active{
+
+}  */
+/********************************************************************************************/
+#contact{
+    background-color: #FAFAFA;
+}
+#contact ul{
+    list-style: none;
+    padding: 0;
+}
+#contact li{
+    border-bottom: 1px solid teal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#contact li:last-child{
+    border-bottom: none;
+}
+#contact li:last-child a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s all;
+}
+#contact li h4{
+    transition: 0.5s all;
+}
+#contact li:hover h4{
+    color: #F15454;
+}
+#contact li:last-child a:hover{
+    color: #F15454;
+}
+#contact form input{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#contact form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+#contact form textarea:focus,#contact form input:focus{
+    border: 2px solid #F15454;
+}
+/***************************************************************************************/
+#info{
+    background-color: #222222;
+    background-image: url('../images/dotted-map (1).png');
+    background-size: 100% 100%;
+    position: relative;
+}
+.TopLayer{
+    position: absolute;
+    top: -25px;
+    left: 48%;
+}
+.TopLayer i{
+    background-color: #F15454;
+    opacity: 0.7;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+.TopLayer i:hover{
+    opacity: 1;
+}
+#info .InfoData h2{
+    color: white;
+    margin-bottom: 15px;
+}
+#info .InfoData p{
+    color: teal;
+}
+#info .InfoData a{
+    color: teal;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: 0.5s all;
+}
+#info .InfoData a:hover{
+    color: #F15454;
+}
+#info .InfoData .btn-outline-secondary:hover{
+    border-color: #F15454;
+    color: #F15454;
+    background-color: unset;
+}
+/**************************************************************************************/
+.Footer{
+    background-color: #1A1A1A;
+    color: white;
+}
+.Footer a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all;
+} 
+.Footer a:hover{
+    color: #F15454;
+}
+.Footer .df{
+    display: flex;
+    justify-content: space-between;
+}
